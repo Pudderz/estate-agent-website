@@ -37,16 +37,16 @@
   }
 }
 
-.marker img{
+.marker img {
   width: 25px;
 }
 
-.mapboxgl-marker{
+.mapboxgl-marker {
   z-index: 120;
 }
 
-.cluster-marker{
-  background-color: #E74C3C;
+.cluster-marker {
+  background-color: #e74c3c;
   /* height: 40px;
   width: 40px; */
   border-radius: 50%;
@@ -63,4 +63,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+/* footer */
+.footer{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 30px 30px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.footer h3 {
+  color: white;
+}
+
+.footer>div {
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 120px;
+    text-align: initial;
+    flex-grow: 1;
+}
+.footer a, .footer p {
+  color: #8e8e8e;
+    width: fit-content;
+}
+
+.footer a:hover, .footer p:hover {
+  color: white
+}
+
+
+
+.subFooter {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 100%;
+  padding: 10px 20px;
+  background-color: rgb(8, 8, 8);
+  color: white;
+}
+
+.subFooter > div {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .subFooter {
+    flex-wrap: wrap;
+  }
+  .subFooter > p {
+    width: 100%;
+    text-align: start;
+  }
+  .subFooter > div {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .subFooter > div p {
+    margin: 0;
+  }
 }
